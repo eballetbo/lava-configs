@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+sudo cp -frv devices device-types health-checks /etc/lava-server/dispatcher-config/
+
