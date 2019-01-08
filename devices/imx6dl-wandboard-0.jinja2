@@ -1,0 +1,6 @@
+{% extends 'imx6dl-wandboard.jinja2' %}
+
+{% set connection_command = 'telnet localhost 2002' %}
+{% set hard_reset_command = 'pduclient -H --daemon localhost --hostname pdu03 --command reboot --port 01' %}
+{% set power_off_command = 'pduclient -H --daemon localhost --hostname pdu03 --command off --port 01' %}
+{% set power_on_command = 'pduclient -H --daemon localhost --hostname pdu03 --command on --port 01' %}

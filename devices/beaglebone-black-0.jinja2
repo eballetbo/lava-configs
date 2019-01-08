@@ -1,0 +1,9 @@
+{% extends 'beaglebone-black.jinja2' %}
+
+{% set connection_command = 'telnet localhost 2000' %}
+{% set hard_reset_command = 'pduclient -H --daemon localhost --hostname pdu02 --command reboot --port 01' %}
+{% set power_off_command = 'pduclient -H --daemon localhost --hostname pdu02 --command off --port 01' %}
+{% set power_on_command = 'pduclient -H --daemon localhost --hostname pdu02 --command on --port 01' %}
+
+{% set interrupt_prompt = 'Press SPACE to abort autoboot' %}
+{% set bootloader_prompt = '=>' %}
